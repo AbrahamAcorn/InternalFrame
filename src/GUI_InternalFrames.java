@@ -39,61 +39,85 @@ class mainWin extends JFrame implements ActionListener{
 		//aButton.setHorizontalTextPosition( SwingConstants.CENTER );
 		//aButton.setVerticalTextPosition( SwingConstants.BOTTOM );
 			ad=new JButton();
-			
 			ad.addActionListener(this);
-			ImageIcon addd = new ImageIcon("addfolder.png");
+			ImageIcon addd = new ImageIcon("add.jpg");
 			ImageIcon addf = new ImageIcon(addd.getImage().getScaledInstance(45, 45, Image.SCALE_REPLICATE));
-			//ad.setHorizontalTextPosition( SwingConstants.CENTER );
-			//ad.setVerticalTextPosition( SwingConstants.BOTTOM );
 			ad.setIcon(addf);
-			ad.setText("Add");
-			ad.setBounds(10, 10, 55, 60);
 			tBar.add(ad);
 			
-			JButton edit=new JButton("edit");
-			edit.setBounds(65, 10, 55, 60);
-			ImageIcon edi = new ImageIcon("multiedit");
-			ImageIcon edif = new ImageIcon(edi.getImage().getScaledInstance(45, 45, Image.SCALE_REPLICATE));
-			ad.setHorizontalTextPosition( SwingConstants.CENTER );
-			ad.setVerticalTextPosition( SwingConstants.BOTTOM );
-			ad.setIcon(edif);
-			tBar.add(ad);
+			JButton edit=new JButton();
+			ImageIcon ed = new ImageIcon("Edit.jpg");
+			ImageIcon edf = new ImageIcon(ed.getImage().getScaledInstance(45, 45, Image.SCALE_REPLICATE));
+			edit.setIcon(edf);
 			tBar.add(edit);
 			
-			JButton back=new JButton("back");
+			JButton back=new JButton();
+			ImageIcon bk = new ImageIcon("Back.jpg");
+			ImageIcon bkf = new ImageIcon(bk.getImage().getScaledInstance(45, 45, Image.SCALE_REPLICATE));
+			back.setIcon(bkf);
 			tBar.add(back);
 			
-			JButton next=new JButton("next");
+			JButton next=new JButton();
+			ImageIcon nxt = new ImageIcon("Next.jpg");
+			ImageIcon nxtf = new ImageIcon(nxt.getImage().getScaledInstance(45, 45, Image.SCALE_REPLICATE));
+			next.setIcon(nxtf);
 			tBar.add(next);
 			
-			JButton list=new JButton("list");
+			JButton list=new JButton();
+			ImageIcon lst = new ImageIcon("List.jpg");
+			ImageIcon lstf = new ImageIcon(lst.getImage().getScaledInstance(45, 45, Image.SCALE_REPLICATE));
+			list.setIcon(lstf);
 			tBar.add(list);
 			
-			JButton save=new JButton("save");
+			JButton save=new JButton();
+			ImageIcon sv = new ImageIcon("Save.jpg");
+			ImageIcon svf = new ImageIcon(sv.getImage().getScaledInstance(45, 45, Image.SCALE_REPLICATE));
+			save.setIcon(svf);
 			tBar.add(save);
 			
-			JButton print=new JButton("print");
+			JButton print=new JButton();
+			ImageIcon prt = new ImageIcon("Print.jpg");
+			ImageIcon prtf = new ImageIcon(prt.getImage().getScaledInstance(45, 45, Image.SCALE_REPLICATE));
+			print.setIcon(prtf);
 			tBar.add(print);
 			
-			JButton test=new JButton("test");
+			JButton test=new JButton();
+			ImageIcon tst = new ImageIcon("Test.jpg");
+			ImageIcon tstf = new ImageIcon(tst.getImage().getScaledInstance(45, 45, Image.SCALE_REPLICATE));
+			test.setIcon(tstf);
 			tBar.add(test);
 			
-			JButton cancel=new JButton("cancel");
+			JButton cancel=new JButton();
+			ImageIcon canc = new ImageIcon("Cancel.jpg");
+			ImageIcon cancf = new ImageIcon(canc.getImage().getScaledInstance(45, 45, Image.SCALE_REPLICATE));
+			cancel.setIcon(cancf);
 			tBar.add(cancel);
 			
-			JButton setng=new JButton("settings");
+			JButton setng=new JButton();
+			ImageIcon setg = new ImageIcon("Settings.jpg");
+			ImageIcon stgf = new ImageIcon(setg.getImage().getScaledInstance(45, 45, Image.SCALE_REPLICATE));
+			setng.setIcon(stgf);
 			tBar.add(setng);
 			
-			JButton delete=new JButton("delete");
+			JButton delete=new JButton();
+			ImageIcon del = new ImageIcon("Delet.jpg");
+			ImageIcon delf = new ImageIcon(del.getImage().getScaledInstance(45, 45, Image.SCALE_REPLICATE));
+			delete.setIcon(delf);
 			tBar.add(delete);
 			
-			JButton slip=new JButton("slip");
+			JButton slip=new JButton();
+			ImageIcon slp = new ImageIcon("Slip.jpg");
+			ImageIcon slpf = new ImageIcon(slp.getImage().getScaledInstance(45, 45, Image.SCALE_REPLICATE));
+			slip.setIcon(slpf);
 			tBar.add(slip);
 			
-			JButton exit=new JButton("exit");
+			JButton exit=new JButton();
+			ImageIcon ext = new ImageIcon("Exit.jpg");
+			ImageIcon extf = new ImageIcon(ext.getImage().getScaledInstance(45, 45, Image.SCALE_REPLICATE));
+			exit.setIcon(extf);
 			tBar.add(exit);
 			
-		add(tBar,BorderLayout.PAGE_START);	
+		add(tBar);	
 		
 		JDesktopPane deskP=new JDesktopPane();
 		deskP.setBounds(0,95,1380,250);
